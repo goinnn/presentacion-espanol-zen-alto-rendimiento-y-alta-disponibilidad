@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Presentación Zen alta disponibilidad y alto rendimiento</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +16,172 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+                        <h1>Zen alta disponibilidad y alto rendimiento</h1>
+                        <h3>29 Junio 2022</h3>
+                        <p>
+                            <small>Pablo Martín - CTO Joinup</small>
+                        </p>
+                    </section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Un poquito de intro</h1>						
+					</section>
+					<section>
+						<h2>¿Donde trabajo?</h2>
+						<ul>
+							<li class="plain fragment">Joinup</li>
+							<li class="plain fragment">Empresas más importantes (nacional / internacional)</li>
+							<li class="plain fragment">Servicios de movilidad:
+								<ul>
+									<li class="plain fragment">Taxi</li>
+									<li class="plain fragment">Reservas de parking</li>
+									<li class="plain fragment">Kilometraje (solo para empresas)</li>
+									<li class="plain fragment">Etc</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>No somos creidos somos crédulos</h2>
+						<ul>
+							<li class="plain fragment">Google Play: 4,8 - 4,9</li>
+							<li class="plain fragment">App Store: 4,7</li>
+						</ul>
+					</section>
+					<section>
+						<h2>¿Qué es alta disponibilidad?</h2>
+						<p>Es la capacidad de garantizar la continuidad de los servicios, incluso en situaciones de deficiencias</p>
+					</section>
+					<section>
+						<h2>Bostezo universal</h2>
+					</section>
+					<section>
+						<h2>¿Qué es alta disponibilidad?</h2>
+						<p>Que siempre funcione: 24*7</p>
+					</section>
+					<section>
+						<h2>¿Qué es alto rendimiento / alta carga?</h2>
+						<p>Que vaya follao</p>
+					</section>
+					<section>
+						<h2>¿Qué es Zen?</h2>
+						<p>Reglas básicas. Faciles de cumplir</p>
+					</section>
+					<section>
+						<h2>Hace 6 años me cambié de empresa:</h2>
+						<ul>
+							<li class="plain fragment">Backend en alta disponibilidad y alto rendimiento</li>
+							<li class="plain fragment">Hacer apps híbridas</li>
+							<li class="plain fragment">Nunca había hecho ninguna de las dos cosas Hulio</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Programador elegante</h2>
+						<ul>
+							<li class="plain fragment">Colaborador Django</li>
+							<li class="plain fragment">Colaborador KDE</li>
+							<li class="plain fragment">Rankings Python Github</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Solo se que no se nada</h2>
+						<p>
+							Realmente no sabía si sabía o no sabía crear un backend en alta disponibilidad y alto rendimiento
+						</p>
+					</section>
+
+				</section>
+				<section>
+					<section>
+						<h1>Zen de Python</h1>
+					</section>
+					<section>
+						<h4>Bello es mejor que feo</h3>
+						<h4 class="plain fragment">Explícito es mejor que implícito</h3>
+						<h4 class="plain fragment">Simple es mejor que complejo</h3>
+						<h4 class="plain fragment">Complejo es mejor que complicado</h3>
+						<h4 class="plain fragment">Plano es mejor que anidado</h3>
+						<h4 class="plain fragment">Espaciado es mejor que denso</h3>
+					</section>
+					<section>
+						<h4>La legibilidad es importante</h4>
+						<h4 class="plain fragment">Los casos especiales no son lo suficientemente especiales como para romper las reglas</h4>
+						<h4 class="plain fragment">Sin embargo la practicidad le gana a la pureza</h4>
+						<h4 class="plain fragment">Los errores nunca deberían pasar silenciosamente</h4>
+						<h4 class="plain fragment">A menos que se silencien explícitamente</h4>
+					</section>
+					<section>
+						<h4>Frente a la ambigüedad, evitar la tentación de adivinar</h4>
+						<h4 class="plain fragment">Debería haber una, y preferiblemente solo una, manera obvia de hacerlo</h4>
+						<h4 class="plain fragment">A pesar de que eso no sea obvio al principio a menos que seas Holandés</h4>
+						<h4 class="plain fragment">Ahora es mejor que nunca</h4>
+						<h4 class="plain fragment">A pesar de que nunca es muchas veces mejor que *ahora* mismo</h4>
+					</section>
+					<section>
+						<h4>Si la implementación es difícil de explicar, es una mala idea</h4>
+						<h4 class="plain fragment">Si la implementación es fácil de explicar, puede que sea una buena idea</h4>
+						<h4 class="plain fragment">Los espacios de nombres son una gran idea, ¡tengamos más de esos!</h4>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Zen de alta disponibilidad y alto rendimiento</h1>
+					</section>
+					<section>
+						<h2>Identifica tus cuellos de botella.</h2>
+					</section>
+					<section>
+						<h2>Uno de los más comunes cuellos de botella son las bases de datos.</h2>
+					</section>
+					<section>
+						<h2>En cada petición HTTP debes de conocer, controlar y optimizar el número de consultas que se hacen a las bases de datos.</h2>
+					</section>
+					<section>
+						<h2>Como no se pueden comparar peras con manzanas, por cada petición HTTP también hay que conocer, controlar y optimizar el tiempo total que tardan en ejecutarse todas las consultas a las bases de datos.</h2>
+					</section>
+					<section>
+						<h2>Las bases de datos relacionales no sirven para todo.</h2>
+					</section>
+					<section>
+						<h2>Del mismo modo debes controlar y optimizar el uso que se hace de la memoria en cada petición.</h2>
+						<h3 class="plain fragment">Si algo hace que suba la memoria… ¡estudialo!.</h3>
+					</section>
+					<section>
+						<h2>La memoria es como los ahorros, si tienes memoria disponible en algún momento puedes gastarla en algún capricho.<h2>
+						<h3 class="plain fragment">Pero aún así no tengas muchos caprichos.</h3>
+					</section>
+					<section>
+						<h2> Por último controla el tiempo global de todas las peticiones.<h2>
+					</section>
+					<section>
+						<h2> Todas las peticiones a sistemas externos deben tener un timeout.<h2>
+						<h3 class="plain fragment">Es mejor amputar un brazo que morir de gangrena.</h3>
+					</section>
+					<section>
+						<h2> Ten un sistema de tareas en segundo plano para que el primer plano (servidor web) sea lo más rápido posible.<h2>
+					</section>
+					<section>
+						<h2> Todas las peticiones a sistemas externos, siempre que sea posible, deben hacerse en segundo plano.<h2>
+						<h4 class="plain fragment">Y creeme la gran mayoría de las peticiones se pueden hacer en segundo plano. Puede que el usuario final pierda algo de información pero ganará un sistema robusto.</h4>
+					</section>
+					<section>
+						<h2> Conoce, controla y optimiza en segundo plano lo mismo que en primer plano.<h2>
+					</section>
+					<section>
+						<h2> No incumplas ninguna de estas normas por más que te tienten con una razón no técnica.<h2>
+						<h3 class="plain fragment">Si la razón es técnica, reflexionala durante el tiempo suficiente.</h3>
+					</section>
+					<section>
+						<h2>No creo que los Holandeses sean superhombres, pero mi color favorito es el naranja.</h2>
+					</section>
+					<section>
+						<h2>Si eres el responsable del backend, tu jefe a partir de ahora será el backend. El podrá despedirte mucho antes que cualquier otra persona de la empresa.</h2>
+					</section>
+				</section>
 			</div>
 		</div>
 
